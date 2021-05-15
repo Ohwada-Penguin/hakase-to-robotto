@@ -1,0 +1,91 @@
+@charset "utf-8";
+@import url("./normalize.css");
+@import url("./color_for_penguin.css");
+@import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300;400;500&display=swap');
+@import url("./keyframes.css");
+@import url("./properties.css");
+
+/*膨大な文字量になるので各段落を外部に分けてる*/
+@import url("./honbun/title.css");
+@import url("./honbun/danraku-1.css");
+@import url("./honbun/danraku-2.css");
+
+*{
+    font-size:15px;
+    font-family: 'Kiwi Maru', serif;
+}
+
+.wrap{
+    width:700px;
+    /*1rem*1.6 が1マス分の大きさ、それが24文字分積み重なり、border分(26px)も加算する*/
+    max-height:calc(calc(calc(1rem * 1.6) * 24) + 25px);
+    min-height:calc(calc(calc(1rem * 1.6) * 18) + 19px);
+    margin:2rem auto;
+    padding:1rem 8rem 1rem 1rem;
+    writing-mode:vertical-rl;
+    text-orientation:upright;
+    line-height:1.6rem;
+    /*そもそも1セルに対して1文字だからletter-spacingはいらなかったわ*/
+    /*letter-spacing:0.3rem;*/
+    overflow:scroll;
+    border:1px solid #000;
+}
+
+
+.waku-sen{
+    /*文字数でwidthは変えるよ*/
+    /*width:200vw;*/
+    height:100%;
+    margin:0;
+    display:inline-flex;
+    flex-direction:column;
+    gap:0.5rem;
+    /*border:1px solid var(--color_sora);*/
+}
+
+.danraku{
+    margin:0;
+}
+
+/*classの属性値として"bunsyou"を含む場合のタグ全てに適応させてるよ。もちろん、class="bunsyou"みたいな単一でも機能するよ。*/
+/*ぶっちゃけ普通の[class~="bunsyou"]{}は.bunsyou{}と同じクラスセレクタ*/
+/*[class^="bunsyou"]{}だと <hoge class="bunsyouuuuuuuuuuuu"></hoge>も含んじゃうからここら辺注意ね*/
+[class~=bunsyou]{
+    display:inline-flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    font-size:0;
+    justify-content:flex-start;
+    /* justify-content:space-between; */
+    align-items:center;
+    letter-spacing:0;
+    padding:0;
+    margin:0 0 0 -0.5rem;
+    list-style-type:none;
+}
+/*class="keisen"を持つタグ全てに適応するCSSやで*/
+                                    /*[id^="moji_"]*//*←は修正前の名残り。id="moji_◯"みたいなmoji_から始まるid全てに適応させるセレクタの書き方だよ*/
+[class~="keisen"]{
+    /* display:inline-block; */
+    /*一文字分の横幅 = line-height*/
+    width:1.6rem;
+    height:1.6rem;
+    line-height:1.6rem;
+    /*marginのbottomをネガティブマージンにすることでborderを重ねて表示してるよ*/
+    margin:0 0 -1px 0.7rem;
+    text-align:center;
+    border-color:#666;
+    /*左右だけborderをつける*/
+    border-width:1px 1px 1px 1px;
+    border-style:dashed solid;    
+}
+/*文字色設定*/
+.moji{ 
+    color:var(--color_kesizumi);
+}
+
+/*radioボタンcss*/
+input[name^="danraku"]{
+    /*見えなくしてるよ*/
+    display:none;
+}

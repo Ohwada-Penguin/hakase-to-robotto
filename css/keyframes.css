@@ -1,0 +1,40 @@
+@charset "utf-8";
+
+/* keyframesのためのcssだよ〜 */
+@keyframes fadein{
+    from{opacity:0;}
+    to{opacity:1;}
+}
+@keyframes bunsyou-fadein{
+    from{opacity:0;}
+    to{opacity:1;}
+}
+
+@keyframes fadeout{
+    from{opacity:1;}
+    to{opacity:0;}
+}
+
+/*
+推奨プロパティ値
+animation: markup 2000ms ease-in-out 0s infinite normal forwards;
+*/
+@keyframes markup{
+    from{opacity:0.2;}
+    50%{opacity:0.8;}
+    to{opacity:0.2;}
+}
+
+/*
+推奨プロパティ値
+animation: read 3000ms ease 0s 1 normal forwards;
+*/
+@keyframes read{
+    from{opacity:0.2;}
+    to{opacity:1;}
+}
+
+@keyframes ifchecked{
+    from{opacity:0.6;}
+    to{opacity:0.2;}
+}

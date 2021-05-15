@@ -1,0 +1,40 @@
+@charset "utf-8";
+@import url("../normalize.css");
+@import url("../keyframes.css");
+@import url("../properties.css");
+
+
+.title{
+    display:inline-block;
+    width:calc(calc(1.6rem * 1.5) + 2px);
+    margin-top:calc(1.6rem + 2px);
+    margin-left:1.6rem;
+}
+/*titleの文字だけ1.5倍の大きさにしてるよ*/
+.title > .bunsyou > .keisen{
+    opacity:0;
+    /* font-size:calc(1rem * 1.5); */
+    width:calc(1.6rem * 1.5);
+    height:calc(1.6rem * 1.5);
+    line-height:calc(1.6rem * 1.5);
+    margin:0 0 -1px 0.7rem;
+    text-align:center;
+    border-color:#666;
+    border-width:1px 1px 1px 1px;
+    border-style:dashed solid;    
+    animation: fadein 2000ms ease-in-out calc(1000ms + calc(160ms*0)) 1 normal forwards;
+}
+/*animationのためにopacity:0;にしてるよ*/
+.title > .bunsyou > .keisen > .moji{
+    opacity:0;
+    font-size:calc(1rem*1.5);
+}
+
+/*moji操作*/
+.title .bunsyou li:nth-of-type(1) .moji{animation: fadein 2000ms ease-in-out calc(1000ms + calc(160ms*0)) 1 normal forwards;}
+.title .bunsyou li:nth-of-type(2) .moji{animation: fadein 2000ms ease-in-out calc(1000ms + calc(160ms*1)) 1 normal forwards;}
+.title .bunsyou li:nth-of-type(3) .moji{animation: fadein 2000ms ease-in-out calc(1000ms + calc(160ms*2)) 1 normal forwards;}
+.title .bunsyou li:nth-of-type(4) .moji{animation: fadein 2000ms ease-in-out calc(1000ms + calc(160ms*3)) 1 normal forwards;}
+.title .bunsyou li:nth-of-type(5) .moji{animation: fadein 2000ms ease-in-out calc(1000ms + calc(160ms*4)) 1 normal forwards;}
+.title .bunsyou li:nth-of-type(6) .moji{animation: fadein 2000ms ease-in-out calc(1000ms + calc(160ms*5)) 1 normal forwards;}
+.title .bunsyou li:nth-of-type(7) .moji{animation: fadein 2000ms ease-in-out calc(1000ms + calc(160ms*6)) 1 normal forwards;}

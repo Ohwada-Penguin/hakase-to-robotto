@@ -1,0 +1,52 @@
+@charset "utf-8";
+@import url("../normalize.css");
+@import url("../keyframes.css");
+@import url("../properties.css");
+
+/*danraku-1はタイトルのopacityが1になった後に表示されるようにするよ*/
+#danraku-1{
+    opacity:0;
+    animation: fadein 500ms ease-in-out 3100ms 1 normal forwards;
+}
+/*第◯段落のx文字目からy文字目までをほにゃららするCSS*/
+#danraku-1 .moji:nth-of-type(n+1):nth-of-type(-n+28){
+    opacity:0; 
+}
+
+#danraku-1-radio:checked+label li:nth-of-type(2) .moji{animation: var(--animation-moji-1-fadein);}
+#danraku-1-radio:checked+label li:nth-of-type(3) .moji{animation: var(--animation-moji-2-fadein);}
+#danraku-1-radio:checked+label li:nth-of-type(4) .moji{animation: var(--animation-moji-3-fadein);}
+#danraku-1-radio:checked+label li:nth-of-type(5) .moji{animation: var(--animation-moji-4-fadein);}
+#danraku-1-radio:checked+label li:nth-of-type(6) .moji{animation: var(--animation-moji-5-fadein);}
+#danraku-1-radio:checked+label li:nth-of-type(7) .moji{animation: var(--animation-moji-6-fadein);}
+#danraku-1-radio:checked+label li:nth-of-type(8) .moji{animation: var(--animation-moji-7-fadein);}
+#danraku-1-radio:checked+label li:nth-of-type(9) .moji{animation: var(--animation-moji-8-fadein);}
+#danraku-1-radio:checked+label li:nth-of-type(10) .moji{animation: var(--animation-moji-9-fadein);}
+#danraku-1-radio:checked+label li:nth-of-type(11) .moji{animation: var(--animation-moji-10-fadein);}
+#danraku-1-radio:checked+label li:nth-of-type(12) .moji{animation: var(--animation-moji-11-fadein);}
+#danraku-1-radio:checked+label li:nth-of-type(13) .moji{animation: var(--animation-moji-12-fadein);}
+#danraku-1-radio:checked+label li:nth-of-type(14) .moji{animation: var(--animation-moji-13-fadein);}
+#danraku-1-radio:checked+label li:nth-of-type(15) .moji{animation: var(--animation-moji-14-fadein);}
+#danraku-1-radio:checked+label li:nth-of-type(16) .moji{animation: var(--animation-moji-15-fadein);}
+#danraku-1-radio:checked+label li:nth-of-type(17) .moji{animation: var(--animation-moji-16-fadein);}
+#danraku-1-radio:checked+label li:nth-of-type(18) .moji{animation: var(--animation-moji-17-fadein);}
+#danraku-1-radio:checked+label li:nth-of-type(19) .moji{animation: var(--animation-moji-18-fadein);}
+#danraku-1-radio:checked+label li:nth-of-type(20) .moji{animation: var(--animation-moji-19-fadein);}
+#danraku-1-radio:checked+label li:nth-of-type(21) .moji{animation: var(--animation-moji-20-fadein);}
+#danraku-1-radio:checked+label li:nth-of-type(22) .moji{animation: var(--animation-moji-21-fadein);}
+#danraku-1-radio:checked+label li:nth-of-type(23) .moji{animation: var(--animation-moji-22-fadein);}
+#danraku-1-radio:checked+label li:nth-of-type(24) .moji{animation: var(--animation-moji-23-fadein);}
+#danraku-1-radio:checked+label li:nth-of-type(25) .moji{animation: var(--animation-moji-24-fadein);}
+#danraku-1-radio:checked+label li:nth-of-type(26) .moji{animation: var(--animation-moji-25-fadein);}
+#danraku-1-radio:checked+label li:nth-of-type(27) .moji{animation: var(--animation-moji-26-fadein);}
+#danraku-1-radio:checked+label li:nth-of-type(28) .moji{animation: var(--animation-moji-27-fadein);}
+
+#danraku-1-radio:not(:checked) + label .keisen{
+    border-color:var(--color_gin-nezumi);
+    animation: markup 2000ms ease-in-out 0s infinite normal forwards;
+}
+
+#danraku-1-radio:checked + label .keisen{
+    border-color:#666;
+    animation: read 1000ms ease 0s 1 normal forwards;
+}

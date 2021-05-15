@@ -1,0 +1,34 @@
+@charset "utf-8";
+@import url("../normalize.css");
+@import url("../keyframes.css");
+@import url("../properties.css");
+
+/*****前の段落がcheckedになったら、check可能になるよ。*****/
+#danraku-1-radio:not(:checked) ~ #danraku-2-radio+label{
+    visibility:hidden;
+}
+#danraku-1-radio:checked ~ #danraku-2-radio+label{
+    animation:var(--animation-bunsyou-ifchecked);
+    visibility:visible;
+}
+/*****----*****/
+
+/*****danraku-2-radioの状態で下記になる*****/
+#danraku-2-radio:not(:checked) + label .moji{
+    opacity:0;
+}
+#danraku-2-radio:not(:checked) + label .keisen{
+    border-color:var(--color_gin-nezumi);
+    animation:var(--animation-keisen-markup);
+}
+
+/**radioがcheckedの時。**/
+#danraku-2-radio:checked + label .moji{
+    animation:var(--animation-bunsyou-fadein); 
+}
+#danraku-2-radio:checked + label .keisen{
+    border-color:#666;
+    /* animation:var(--animation-bunsyou-fadein); */
+    animation:read 1000ms ease 0s 1 normal forwards;
+}
+/*****---*****/

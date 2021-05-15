@@ -1,0 +1,1 @@
+//chromeのページロード時に起きるtransitionの暴発予防用のjsだよ
