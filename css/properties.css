@@ -59,7 +59,7 @@
     --animation-moji-50-fadein:fadein 500ms ease-in-out calc(500ms + calc(160ms*49)) 1 normal forwards;
 
     /*前段落がcheckedになった時に現段落の.keisen表示アニメーション*/
-    --animation-bunsyou-ifchecked:fadein 2000ms ease-in-out 0ms 1 normal forwards;
-    --animation-keisen-markup:markup 3000ms ease-in-out 1000ms infinite normal forwards;
+    --animation-bunsyou-ifchecked:ifchecked 2000ms ease-in-out 0ms 1 normal forwards;
+    --animation-keisen-markup:markup 2000ms ease-in-out 1000ms infinite normal forwards;
     --animation-bunsyou-read:read 2000ms ease 0s 1 normal forwards;
 }

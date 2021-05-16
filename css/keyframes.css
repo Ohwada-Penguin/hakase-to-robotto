@@ -35,6 +35,18 @@ animation: read 3000ms ease 0s 1 normal forwards;
 }
 
 @keyframes ifchecked{
-    from{opacity:0.6;}
+    from{opacity:0.8;}
     to{opacity:0.2;}
+}
+
+/*
+推奨プロパティ値...visibilityの切り替えのためのアニメーションなので、animation-delayによる遅延で切り替えタイミングを調整する。切り替え自体は1msで一瞬や。
+visibility-switch-from-hidden 1ms ease 3100ms 1 normal forwards;*/
+@keyframes visibility-switch-from-hidden{
+    from{
+        visibility:hidden;
+    }
+    to{
+        visibility:visible;
+    }
 }

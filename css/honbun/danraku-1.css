@@ -3,16 +3,39 @@
 @import url("../keyframes.css");
 @import url("../properties.css");
 
-/*danraku-1はタイトルのopacityが1になった後に表示されるようにするよ*/
-#danraku-1{
-    opacity:0;
-    animation: fadein 500ms ease-in-out 3100ms 1 normal forwards;
+/*
+[2] <input type="radio"> 内で，checked属性 を指定すると，このラジオボタンが初期状態でチェックされた状態になります。
+同じ name属性 の値をもつラジオボタンのグループ内で，１つに checked属性を指定することができます。
+checked属性が１つもない場合のラジオボタンの動作は未定義 です。（ 「どのラジオボタンもチェックされていない状態」になるわけではありません ので，注意が必要です。）
+必ずどれか１つに checked属性を指定 してください。
+*/
+/*
+どうも選択inputにおいて「:checked」「:not(checked)」「どちらでもない未定義状態」の３パターンあるっぽい
+*/
+
+
+/*danraku-1はtitleのopacityが1になった後に表示されるようにするよ*/
+/*#danraku-1-radio:not(:checked) #danraku-1 .bunsyou にすると セレクタの問題で無効になるから書き方注意ね。inputの子要素として#danraku-1はないからね*/
+#danraku-1-radio:not(:checked) + label{
+    /*
+    animationプロパティは複数記述すると、最後のanimationに上書きされるぞ。
+    複数のanimationを設定させたいならカンマで区切るんだ
+    */
+    /* animation: visibility-switch-from-hidden 1000ms ease 3100ms 1 normal both; */
+    animation: visibility-switch-from-hidden 1000ms ease 3100ms 1 normal both,fadein 1000ms ease-in-out 3100ms 1 normal forwards;
 }
-/*第◯段落のx文字目からy文字目までをほにゃららするCSS*/
+/*第◯段落のx文字目からy文字目までをほにゃららするCSS
+x = nth-of-type(n+x)....3文字目から操作したいなら:nth-of-type(n+3)
+y = nth-of-type(-n+y)....20文字目まで操作したいなら:nth-of-type(-n+20)
+*/
 #danraku-1 .moji:nth-of-type(n+1):nth-of-type(-n+28){
     opacity:0; 
 }
 
+/*
+var変数使ってるけど、実際はanimation-delayしか違わないから、animation-delayだけ記述した方が綺麗にはなる。
+そうしたほうがいいのかな。使い回す@keyframesだし、まぁひとまずはヨシ
+*/
 #danraku-1-radio:checked+label li:nth-of-type(2) .moji{animation: var(--animation-moji-1-fadein);}
 #danraku-1-radio:checked+label li:nth-of-type(3) .moji{animation: var(--animation-moji-2-fadein);}
 #danraku-1-radio:checked+label li:nth-of-type(4) .moji{animation: var(--animation-moji-3-fadein);}
