@@ -57,6 +57,60 @@
     --animation-moji-48-fadein:fadein 500ms ease-in-out calc(500ms + calc(160ms*47)) 1 normal forwards;
     --animation-moji-49-fadein:fadein 500ms ease-in-out calc(500ms + calc(160ms*48)) 1 normal forwards;
     --animation-moji-50-fadein:fadein 500ms ease-in-out calc(500ms + calc(160ms*49)) 1 normal forwards;
+    --animation-moji-51-fadein:fadein 500ms ease-in-out calc(500ms + calc(160ms*50)) 1 normal forwards;
+    --animation-moji-52-fadein:fadein 500ms ease-in-out calc(500ms + calc(160ms*51)) 1 normal forwards;
+    --animation-moji-53-fadein:fadein 500ms ease-in-out calc(500ms + calc(160ms*52)) 1 normal forwards;
+    --animation-moji-54-fadein:fadein 500ms ease-in-out calc(500ms + calc(160ms*53)) 1 normal forwards;
+    --animation-moji-55-fadein:fadein 500ms ease-in-out calc(500ms + calc(160ms*54)) 1 normal forwards;
+    --animation-moji-56-fadein:fadein 500ms ease-in-out calc(500ms + calc(160ms*55)) 1 normal forwards;
+    --animation-moji-57-fadein:fadein 500ms ease-in-out calc(500ms + calc(160ms*56)) 1 normal forwards;
+    --animation-moji-58-fadein:fadein 500ms ease-in-out calc(500ms + calc(160ms*57)) 1 normal forwards;
+    --animation-moji-59-fadein:fadein 500ms ease-in-out calc(500ms + calc(160ms*58)) 1 normal forwards;
+    --animation-moji-60-fadein:fadein 500ms ease-in-out calc(500ms + calc(160ms*59)) 1 normal forwards;
+    --animation-moji-61-fadein:fadein 500ms ease-in-out calc(500ms + calc(160ms*60)) 1 normal forwards;
+    --animation-moji-62-fadein:fadein 500ms ease-in-out calc(500ms + calc(160ms*61)) 1 normal forwards;
+    --animation-moji-63-fadein:fadein 500ms ease-in-out calc(500ms + calc(160ms*62)) 1 normal forwards;
+    --animation-moji-64-fadein:fadein 500ms ease-in-out calc(500ms + calc(160ms*63)) 1 normal forwards;
+    --animation-moji-65-fadein:fadein 500ms ease-in-out calc(500ms + calc(160ms*64)) 1 normal forwards;
+    --animation-moji-66-fadein:fadein 500ms ease-in-out calc(500ms + calc(160ms*65)) 1 normal forwards;
+    --animation-moji-67-fadein:fadein 500ms ease-in-out calc(500ms + calc(160ms*66)) 1 normal forwards;
+    --animation-moji-68-fadein:fadein 500ms ease-in-out calc(500ms + calc(160ms*67)) 1 normal forwards;
+    --animation-moji-69-fadein:fadein 500ms ease-in-out calc(500ms + calc(160ms*68)) 1 normal forwards;
+    --animation-moji-70-fadein:fadein 500ms ease-in-out calc(500ms + calc(160ms*69)) 1 normal forwards;
+    --animation-moji-71-fadein:fadein 500ms ease-in-out calc(500ms + calc(160ms*70)) 1 normal forwards;
+    --animation-moji-72-fadein:fadein 500ms ease-in-out calc(500ms + calc(160ms*71)) 1 normal forwards;
+    --animation-moji-73-fadein:fadein 500ms ease-in-out calc(500ms + calc(160ms*72)) 1 normal forwards;
+    --animation-moji-74-fadein:fadein 500ms ease-in-out calc(500ms + calc(160ms*73)) 1 normal forwards;
+    --animation-moji-75-fadein:fadein 500ms ease-in-out calc(500ms + calc(160ms*74)) 1 normal forwards;
+    --animation-moji-76-fadein:fadein 500ms ease-in-out calc(500ms + calc(160ms*75)) 1 normal forwards;
+    --animation-moji-77-fadein:fadein 500ms ease-in-out calc(500ms + calc(160ms*76)) 1 normal forwards;
+    --animation-moji-78-fadein:fadein 500ms ease-in-out calc(500ms + calc(160ms*77)) 1 normal forwards;
+    --animation-moji-79-fadein:fadein 500ms ease-in-out calc(500ms + calc(160ms*78)) 1 normal forwards;
+    --animation-moji-80-fadein:fadein 500ms ease-in-out calc(500ms + calc(160ms*79)) 1 normal forwards;
+    --animation-moji-81-fadein:fadein 500ms ease-in-out calc(500ms + calc(160ms*80)) 1 normal forwards;
+    --animation-moji-82-fadein:fadein 500ms ease-in-out calc(500ms + calc(160ms*81)) 1 normal forwards;
+    --animation-moji-83-fadein:fadein 500ms ease-in-out calc(500ms + calc(160ms*82)) 1 normal forwards;
+    --animation-moji-84-fadein:fadein 500ms ease-in-out calc(500ms + calc(160ms*83)) 1 normal forwards;
+    --animation-moji-85-fadein:fadein 500ms ease-in-out calc(500ms + calc(160ms*84)) 1 normal forwards;
+    --animation-moji-86-fadein:fadein 500ms ease-in-out calc(500ms + calc(160ms*85)) 1 normal forwards;
+    --animation-moji-87-fadein:fadein 500ms ease-in-out calc(500ms + calc(160ms*86)) 1 normal forwards;
+    --animation-moji-88-fadein:fadein 500ms ease-in-out calc(500ms + calc(160ms*87)) 1 normal forwards;
+    --animation-moji-89-fadein:fadein 500ms ease-in-out calc(500ms + calc(160ms*88)) 1 normal forwards;
+    --animation-moji-90-fadein:fadein 500ms ease-in-out calc(500ms + calc(160ms*89)) 1 normal forwards;
+    --animation-moji-91-fadein:fadein 500ms ease-in-out calc(500ms + calc(160ms*80)) 1 normal forwards;
+    --animation-moji-92-fadein:fadein 500ms ease-in-out calc(500ms + calc(160ms*91)) 1 normal forwards;
+    --animation-moji-93-fadein:fadein 500ms ease-in-out calc(500ms + calc(160ms*92)) 1 normal forwards;
+    --animation-moji-94-fadein:fadein 500ms ease-in-out calc(500ms + calc(160ms*93)) 1 normal forwards;
+    --animation-moji-95-fadein:fadein 500ms ease-in-out calc(500ms + calc(160ms*94)) 1 normal forwards;
+    --animation-moji-96-fadein:fadein 500ms ease-in-out calc(500ms + calc(160ms*95)) 1 normal forwards;
+    --animation-moji-97-fadein:fadein 500ms ease-in-out calc(500ms + calc(160ms*96)) 1 normal forwards;
+    --animation-moji-98-fadein:fadein 500ms ease-in-out calc(500ms + calc(160ms*97)) 1 normal forwards;
+    --animation-moji-99-fadein:fadein 500ms ease-in-out calc(500ms + calc(160ms*98)) 1 normal forwards;
+    --animation-moji-100-fadein:fadein 500ms ease-in-out calc(500ms + calc(160ms*99)) 1 normal forwards;
+    --animation-moji-101-fadein:fadein 500ms ease-in-out calc(500ms + calc(160ms*100)) 1 normal forwards;
+
+
+
 
     /*前段落がcheckedになった時に現段落の.keisen表示アニメーション*/
     --animation-bunsyou-ifchecked:ifchecked 2000ms ease-in-out 0ms 1 normal forwards;

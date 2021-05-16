@@ -24,11 +24,11 @@ checked属性が１つもない場合のラジオボタンの動作は未定義 
     /* animation: visibility-switch-from-hidden 1000ms ease 3100ms 1 normal both; */
     animation: visibility-switch-from-hidden 1000ms ease 3100ms 1 normal both,fadein 1000ms ease-in-out 3100ms 1 normal forwards;
 }
-/*第◯段落のx文字目からy文字目までをほにゃららするCSS
-x = nth-of-type(n+x)....3文字目から操作したいなら:nth-of-type(n+3)
-y = nth-of-type(-n+y)....20文字目まで操作したいなら:nth-of-type(-n+20)
+/*第◯段落のx文字目からy文字目までをほにゃららするCSS。まじでnth-of-typeの使い方は気をつけろ。セレクタにしてるのはクラス名じゃなくてelementだからな。
+x = :nth-of-type(n+x)....3文字目から操作したいなら:nth-of-type(n+3)
+y = :nth-of-type(-n+y)....20文字目まで操作したいなら:nth-of-type(-n+20)
 */
-#danraku-1 .moji:nth-of-type(n+1):nth-of-type(-n+28){
+#danraku-1 .moji{
     opacity:0; 
 }
 

@@ -9,6 +9,12 @@
 @import url("./honbun/title.css");
 @import url("./honbun/danraku-1.css");
 @import url("./honbun/danraku-2.css");
+@import url("./honbun/danraku-3.css");
+@import url("./honbun/danraku-4.css");
+@import url("./honbun/danraku-5.css");
+@import url("./honbun/danraku-6.css");
+@import url("./honbun/danraku-7.css");
+@import url("./honbun/danraku-8.css");
 
 *{
     font-size:15px;
@@ -39,7 +45,7 @@
     margin:0;
     display:inline-flex;
     flex-direction:column;
-    gap:0.5rem;
+    /* gap:0.5rem; */
     /*border:1px solid var(--color_sora);*/
 }
 
@@ -60,7 +66,7 @@
     align-items:center;
     letter-spacing:0;
     padding:0;
-    margin:0 0 0 -0.5rem;
+    margin:0 0.5rem 0 -0.5rem;
     list-style-type:none;
 }
 /*class="keisen"を持つタグ全てに適応するCSSやで*/
@@ -82,6 +88,14 @@
 /*文字色設定*/
 .moji{ 
     color:var(--color_kesizumi);
+}
+
+/*博士とロボット関係の文字を変えてるよ*/
+.hakase{
+    color:var(--color_nadesiko);
+}
+.robotto{
+    color:var(--color_sora);
 }
 
 /*radioボタンcss*/

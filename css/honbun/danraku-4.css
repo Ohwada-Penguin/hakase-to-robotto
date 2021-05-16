@@ -14,28 +14,28 @@ checked属性が１つもない場合のラジオボタンの動作は未定義 
 */
 
 /*****前の段落がcheckedになったら、check可能になるよ。*****/
-#danraku-1-radio:not(:checked) ~ #danraku-2-radio+label{
+#danraku-3-radio:not(:checked) ~ #danraku-4-radio+label{
     visibility:hidden;
 }
-#danraku-1-radio:checked ~ #danraku-2-radio+label{
+#danraku-3-radio:checked ~ #danraku-4-radio+label{
     animation:var(--animation-bunsyou-read);
 }
 /*****----*****/
 
-/*****danraku-2-radioの状態で下記になる*****/
-#danraku-2-radio:not(:checked) + label .moji{
+/*****danraku-3-radioの状態で下記になる*****/
+#danraku-4-radio:not(:checked) + label .moji{
     opacity:0;
 }
-#danraku-2-radio:not(:checked) + label .keisen{
+#danraku-4-radio:not(:checked) + label .keisen{
     border-color:var(--color_gin-nezumi);
     animation:var(--animation-keisen-markup);
 }
 
 /**radioがcheckedの時。**/
-#danraku-2-radio:checked + label .moji{
+#danraku-4-radio:checked + label .moji{
     animation:var(--animation-bunsyou-fadein); 
 }
-#danraku-2-radio:checked + label .keisen{
+#danraku-4-radio:checked + label .keisen{
     border-color:#666;
     /* animation:var(--animation-bunsyou-fadein); */
     animation:read 1000ms ease 0s 1 normal forwards;
