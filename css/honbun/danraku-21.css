@@ -1,0 +1,67 @@
+@charset "utf-8";
+@import url("../normalize.css");
+@import url("../keyframes.css");
+@import url("../properties.css");
+
+
+/*会話文用margin、左右1マス分空ける。*/
+/*danraku-21は博士の会話文の直後に来るので側左川だけマージンを設ける。*/
+#danraku-21{
+    margin:0 0 0 calc(1.6rem * 1);
+}
+
+/*ロボット関係の文字は空色*/
+#danraku-21 .moji:not(.kagikakko){
+    color:var(--color_sora);
+}
+
+
+/*
+[2] <input type="radio"> 内で，checked属性 を指定すると，このラジオボタンが初期状態でチェックされた状態になります。
+同じ name属性 の値をもつラジオボタンのグループ内で，１つに checked属性を指定することができます。
+checked属性が１つもない場合のラジオボタンの動作は未定義 です。（ 「どのラジオボタンもチェックされていない状態」になるわけではありません ので，注意が必要です。）
+必ずどれか１つに checked属性を指定 してください。
+*/
+/*
+どうも選択inputにおいて「:checked」「:not(checked)」「どちらでもない未定義状態」の３パターンあるっぽい
+*/
+
+/*****前の段落がcheckedになったら、check可能になるよ。*****/
+#danraku-20-radio:not(:checked) ~ #danraku-21-radio+label{
+    visibility:hidden;
+}
+#danraku-20-radio:checked ~ #danraku-21-radio+label{
+    animation:var(--animation-bunsyou-read);
+}
+/*****----*****/
+
+/*****danraku-20-radio:checkedの状態で下記になる*****/
+#danraku-21 .moji:not(.kagikakko){
+    opacity:0;
+}
+
+#danraku-21-radio:not(:checked) + label .keisen{
+    border-color:var(--color_gin-nezumi);
+    animation:var(--animation-keisen-markup);
+}
+
+#danraku-21-radio:checked+label li:nth-of-type(2) .moji{animation: fadein 1ms ease-in-out calc(500ms + calc(180ms*0)) 1 normal forwards;}
+#danraku-21-radio:checked+label li:nth-of-type(3) .moji{animation: fadein 1ms ease-in-out calc(500ms + calc(180ms*1)) 1 normal forwards;}
+#danraku-21-radio:checked+label li:nth-of-type(4) .moji{animation: fadein 1ms ease-in-out calc(500ms + calc(180ms*2)) 1 normal forwards;}
+
+#danraku-21-radio:checked+label li:nth-of-type(5) .moji{animation: fadein 1ms ease-in-out calc(500ms + calc(180ms*6)) 1 normal forwards;;}
+#danraku-21-radio:checked+label li:nth-of-type(6) .moji{animation: fadein 1ms ease-in-out calc(500ms + calc(180ms*7)) 1 normal forwards;}
+#danraku-21-radio:checked+label li:nth-of-type(7) .moji{animation: fadein 1ms ease-in-out calc(500ms + calc(180ms*8)) 1 normal forwards;}
+#danraku-21-radio:checked+label li:nth-of-type(8) .moji{animation: fadein 1ms ease-in-out calc(500ms + calc(180ms*9)) 1 normal forwards;}
+#danraku-21-radio:checked+label li:nth-of-type(9) .moji{animation: fadein 1ms ease-in-out calc(500ms + calc(180ms*10)) 1 normal forwards;}
+#danraku-21-radio:checked+label li:nth-of-type(10) .moji{animation: fadein 1ms ease-in-out calc(500ms + calc(180ms*11)) 1 normal forwards;}
+#danraku-21-radio:checked+label li:nth-of-type(11) .moji{animation: fadein 1ms ease-in-out calc(500ms + calc(180ms*12)) 1 normal forwards;}
+#danraku-21-radio:checked+label li:nth-of-type(12) .moji{animation: fadein 1ms ease-in-out calc(500ms + calc(180ms*13)) 1 normal forwards;}
+#danraku-21-radio:checked+label li:nth-of-type(13) .moji{animation: fadein 1ms ease-in-out calc(500ms + calc(180ms*14)) 1 normal forwards;}
+
+#danraku-21-radio:checked + label .keisen:not(.kagikakko){
+    border-color:#666;
+    /* animation:var(--animation-bunsyou-fadein); */
+    animation:read 1000ms ease 0s 1 normal forwards;
+}
+/*****---*****/

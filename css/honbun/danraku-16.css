@@ -1,0 +1,43 @@
+@charset "utf-8";
+@import url("../normalize.css");
+@import url("../keyframes.css");
+@import url("../properties.css");
+
+/*
+[2] <input type="radio"> 内で，checked属性 を指定すると，このラジオボタンが初期状態でチェックされた状態になります。
+同じ name属性 の値をもつラジオボタンのグループ内で，１つに checked属性を指定することができます。
+checked属性が１つもない場合のラジオボタンの動作は未定義 です。（ 「どのラジオボタンもチェックされていない状態」になるわけではありません ので，注意が必要です。）
+必ずどれか１つに checked属性を指定 してください。
+*/
+/*
+どうも選択inputにおいて「:checked」「:not(checked)」「どちらでもない未定義状態」の３パターンあるっぽい
+*/
+
+/*****前の段落がcheckedになったら、check可能になるよ。*****/
+#danraku-15-radio:not(:checked) ~ #danraku-16-radio+label{
+    visibility:hidden;
+}
+#danraku-15-radio:checked ~ #danraku-16-radio+label{
+    animation:var(--animation-bunsyou-read);
+}
+/*****----*****/
+
+/*****danraku-15-radioの状態で下記になる*****/
+#danraku-16-radio + label .moji{
+    opacity:0;
+}
+#danraku-16-radio:not(:checked) + label .keisen{
+    border-color:var(--color_gin-nezumi);
+    animation:var(--animation-keisen-markup);
+}
+
+/**radioがcheckedの時。**/
+#danraku-16-radio:checked + label .moji{
+    animation:var(--animation-bunsyou-fadein); 
+}
+#danraku-16-radio:checked + label .keisen{
+    border-color:#666;
+    /* animation:var(--animation-bunsyou-fadein); */
+    animation:read 1000ms ease 0s 1 normal forwards;
+}
+/*****---*****/

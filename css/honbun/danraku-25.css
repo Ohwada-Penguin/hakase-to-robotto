@@ -1,0 +1,107 @@
+@charset "utf-8";
+@import url("../normalize.css");
+@import url("../keyframes.css");
+@import url("../properties.css");
+
+
+/*会話文用margin、右1マス分空ける。*/
+#danraku-25{
+    margin:0 calc(1.6rem * 1);
+}
+#danraku-25 .moji:not(.kagikakko){
+    color:var(--color_nadesiko);
+}
+
+
+/*
+[2] <input type="radio"> 内で，checked属性 を指定すると，このラジオボタンが初期状態でチェックされた状態になります。
+同じ name属性 の値をもつラジオボタンのグループ内で，１つに checked属性を指定することができます。
+checked属性が１つもない場合のラジオボタンの動作は未定義 です。（ 「どのラジオボタンもチェックされていない状態」になるわけではありません ので，注意が必要です。）
+必ずどれか１つに checked属性を指定 してください。
+*/
+/*
+どうも選択inputにおいて「:checked」「:not(checked)」「どちらでもない未定義状態」の３パターンあるっぽい
+*/
+
+/*****前の段落がcheckedになったら、check可能になるよ。*****/
+#danraku-24-radio:not(:checked) ~ #danraku-25-radio+label{
+    visibility:hidden;
+}
+#danraku-24-radio:checked ~ #danraku-25-radio+label{
+    animation:var(--animation-bunsyou-read);
+}
+/*****----*****/
+
+/*****danraku-24-radio:checkedの状態で下記になる*****/
+#danraku-25 .moji:not(.kagikakko){
+    opacity:0;
+}
+
+#danraku-25-radio:not(:checked) + label .keisen{
+    border-color:var(--color_gin-nezumi);
+    animation:var(--animation-keisen-markup);
+}
+
+#danraku-25-radio:checked+label li:nth-of-type(2) .moji{animation: var(--animation-moji-1-fadein);}
+#danraku-25-radio:checked+label li:nth-of-type(3) .moji{animation: var(--animation-moji-2-fadein);}
+#danraku-25-radio:checked+label li:nth-of-type(4) .moji{animation: var(--animation-moji-3-fadein);}
+#danraku-25-radio:checked+label li:nth-of-type(5) .moji{animation: var(--animation-moji-4-fadein);}
+#danraku-25-radio:checked+label li:nth-of-type(6) .moji{animation: var(--animation-moji-5-fadein);}
+#danraku-25-radio:checked+label li:nth-of-type(7) .moji{animation: var(--animation-moji-6-fadein);}
+#danraku-25-radio:checked+label li:nth-of-type(8) .moji{animation: var(--animation-moji-7-fadein);}
+#danraku-25-radio:checked+label li:nth-of-type(9) .moji{animation: var(--animation-moji-8-fadein);}
+#danraku-25-radio:checked+label li:nth-of-type(10) .moji{animation: var(--animation-moji-9-fadein);}
+#danraku-25-radio:checked+label li:nth-of-type(11) .moji{animation: var(--animation-moji-10-fadein);}
+#danraku-25-radio:checked+label li:nth-of-type(12) .moji{animation: var(--animation-moji-11-fadein);}
+#danraku-25-radio:checked+label li:nth-of-type(13) .moji{animation: var(--animation-moji-12-fadein);}
+#danraku-25-radio:checked+label li:nth-of-type(14) .moji{animation: var(--animation-moji-13-fadein);}
+#danraku-25-radio:checked+label li:nth-of-type(15) .moji{animation: var(--animation-moji-14-fadein);}
+#danraku-25-radio:checked+label li:nth-of-type(16) .moji{animation: var(--animation-moji-15-fadein);}
+#danraku-25-radio:checked+label li:nth-of-type(17) .moji{animation: var(--animation-moji-16-fadein);}
+#danraku-25-radio:checked+label li:nth-of-type(18) .moji{animation: var(--animation-moji-17-fadein);}
+#danraku-25-radio:checked+label li:nth-of-type(19) .moji{animation: var(--animation-moji-18-fadein);}
+
+#danraku-25-radio:checked+label li:nth-of-type(20) .moji{animation: var(--animation-moji-24-fadein);}
+#danraku-25-radio:checked+label li:nth-of-type(21) .moji{animation: var(--animation-moji-25-fadein);}
+#danraku-25-radio:checked+label li:nth-of-type(22) .moji{animation: var(--animation-moji-26-fadein);}
+#danraku-25-radio:checked+label li:nth-of-type(23) .moji{animation: var(--animation-moji-27-fadein);}
+#danraku-25-radio:checked+label li:nth-of-type(24) .moji{animation: var(--animation-moji-28-fadein);}
+#danraku-25-radio:checked+label li:nth-of-type(25) .moji{animation: var(--animation-moji-29-fadein);}
+#danraku-25-radio:checked+label li:nth-of-type(26) .moji{animation: var(--animation-moji-30-fadein);}
+#danraku-25-radio:checked+label li:nth-of-type(27) .moji{animation: var(--animation-moji-31-fadein);}
+#danraku-25-radio:checked+label li:nth-of-type(28) .moji{animation: var(--animation-moji-32-fadein);}
+#danraku-25-radio:checked+label li:nth-of-type(29) .moji{animation: var(--animation-moji-33-fadein);}
+#danraku-25-radio:checked+label li:nth-of-type(30) .moji{animation: var(--animation-moji-34-fadein);}
+#danraku-25-radio:checked+label li:nth-of-type(31) .moji{animation: var(--animation-moji-35-fadein);}
+#danraku-25-radio:checked+label li:nth-of-type(32) .moji{animation: var(--animation-moji-36-fadein);}
+#danraku-25-radio:checked+label li:nth-of-type(33) .moji{animation: var(--animation-moji-37-fadein);}
+#danraku-25-radio:checked+label li:nth-of-type(34) .moji{animation: var(--animation-moji-38-fadein);}
+#danraku-25-radio:checked+label li:nth-of-type(35) .moji{animation: var(--animation-moji-39-fadein);}
+#danraku-25-radio:checked+label li:nth-of-type(36) .moji{animation: var(--animation-moji-40-fadein);}
+#danraku-25-radio:checked+label li:nth-of-type(37) .moji{animation: var(--animation-moji-41-fadein);}
+#danraku-25-radio:checked+label li:nth-of-type(38) .moji{animation: var(--animation-moji-42-fadein);}
+#danraku-25-radio:checked+label li:nth-of-type(39) .moji{animation: var(--animation-moji-43-fadein);}
+#danraku-25-radio:checked+label li:nth-of-type(40) .moji{animation: var(--animation-moji-44-fadein);}
+
+#danraku-25-radio:checked+label li:nth-of-type(41) .moji{animation: var(--animation-moji-50-fadein);}
+#danraku-25-radio:checked+label li:nth-of-type(42) .moji{animation: var(--animation-moji-51-fadein);}
+#danraku-25-radio:checked+label li:nth-of-type(43) .moji{animation: var(--animation-moji-52-fadein);}
+#danraku-25-radio:checked+label li:nth-of-type(44) .moji{animation: var(--animation-moji-53-fadein);}
+#danraku-25-radio:checked+label li:nth-of-type(45) .moji{animation: var(--animation-moji-54-fadein);}
+#danraku-25-radio:checked+label li:nth-of-type(46) .moji{animation: var(--animation-moji-55-fadein);}
+#danraku-25-radio:checked+label li:nth-of-type(47) .moji{animation: var(--animation-moji-56-fadein);}
+#danraku-25-radio:checked+label li:nth-of-type(48) .moji{animation: var(--animation-moji-57-fadein);}
+#danraku-25-radio:checked+label li:nth-of-type(49) .moji{animation: var(--animation-moji-58-fadein);}
+#danraku-25-radio:checked+label li:nth-of-type(50) .moji{animation: var(--animation-moji-59-fadein);}
+#danraku-25-radio:checked+label li:nth-of-type(51) .moji{animation: var(--animation-moji-60-fadein);}
+#danraku-25-radio:checked+label li:nth-of-type(52) .moji{animation: var(--animation-moji-61-fadein);}
+#danraku-25-radio:checked+label li:nth-of-type(53) .moji{animation: var(--animation-moji-62-fadein);}
+#danraku-25-radio:checked+label li:nth-of-type(54) .moji{animation: var(--animation-moji-63-fadein);}
+
+
+#danraku-25-radio:checked + label .keisen:not(.kagikakko){
+    border-color:#666;
+    /* animation:var(--animation-bunsyou-fadein); */
+    animation:read 1000ms ease 0s 1 normal forwards;
+}
+/*****---*****/

@@ -97,7 +97,7 @@
     --animation-moji-88-fadein:fadein 500ms ease-in-out calc(500ms + calc(160ms*87)) 1 normal forwards;
     --animation-moji-89-fadein:fadein 500ms ease-in-out calc(500ms + calc(160ms*88)) 1 normal forwards;
     --animation-moji-90-fadein:fadein 500ms ease-in-out calc(500ms + calc(160ms*89)) 1 normal forwards;
-    --animation-moji-91-fadein:fadein 500ms ease-in-out calc(500ms + calc(160ms*80)) 1 normal forwards;
+    --animation-moji-91-fadein:fadein 500ms ease-in-out calc(500ms + calc(160ms*90)) 1 normal forwards;
     --animation-moji-92-fadein:fadein 500ms ease-in-out calc(500ms + calc(160ms*91)) 1 normal forwards;
     --animation-moji-93-fadein:fadein 500ms ease-in-out calc(500ms + calc(160ms*92)) 1 normal forwards;
     --animation-moji-94-fadein:fadein 500ms ease-in-out calc(500ms + calc(160ms*93)) 1 normal forwards;
@@ -108,6 +108,15 @@
     --animation-moji-99-fadein:fadein 500ms ease-in-out calc(500ms + calc(160ms*98)) 1 normal forwards;
     --animation-moji-100-fadein:fadein 500ms ease-in-out calc(500ms + calc(160ms*99)) 1 normal forwards;
     --animation-moji-101-fadein:fadein 500ms ease-in-out calc(500ms + calc(160ms*100)) 1 normal forwards;
+    --animation-moji-102-fadein:fadein 500ms ease-in-out calc(500ms + calc(160ms*101)) 1 normal forwards;
+    --animation-moji-103-fadein:fadein 500ms ease-in-out calc(500ms + calc(160ms*102)) 1 normal forwards;
+    --animation-moji-104-fadein:fadein 500ms ease-in-out calc(500ms + calc(160ms*103)) 1 normal forwards;
+    --animation-moji-105-fadein:fadein 500ms ease-in-out calc(500ms + calc(160ms*104)) 1 normal forwards;
+    --animation-moji-106-fadein:fadein 500ms ease-in-out calc(500ms + calc(160ms*105)) 1 normal forwards;
+    --animation-moji-107-fadein:fadein 500ms ease-in-out calc(500ms + calc(160ms*106)) 1 normal forwards;
+    --animation-moji-108-fadein:fadein 500ms ease-in-out calc(500ms + calc(160ms*107)) 1 normal forwards;
+    --animation-moji-109-fadein:fadein 500ms ease-in-out calc(500ms + calc(160ms*108)) 1 normal forwards;
+    --animation-moji-110-fadein:fadein 500ms ease-in-out calc(500ms + calc(160ms*109)) 1 normal forwards;
 
 
 
